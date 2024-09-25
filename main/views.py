@@ -8,6 +8,7 @@ from main.forms import MoodEntryForm
 from main.models import MoodEntry
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='/login')
